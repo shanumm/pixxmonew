@@ -109,7 +109,7 @@ export default function Home() {
       end = new Date();
       timer = end - start;
       if (timer > 300) {
-        History.push("/service");
+        History.push("/services");
       }
     });
     page2.addEventListener("mousedown", () => {
