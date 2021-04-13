@@ -172,7 +172,7 @@ body {
   top: 0;
   left: 0;
   clip-path: circle(8% at var(--x) var(--y));
-  background: url("../src/Images/Mars02.jpg");
+  background: url("../src/Images/deep_space.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
