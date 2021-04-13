@@ -17,29 +17,31 @@
 /* pointer */
 
 .custom-pointer {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   /* background-color: black; */
   position: absolute;
   z-index: 1;
   top: 0;
-  left: 0;
+  left: 0%;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   pointer-events: none;
-  font-size: 0.8rem;
-  transition: height 0.2s linear, width 0.2s linear, transform 0.5s linear,
-    background 0.5s linear, color 0.5s linear;
+  font-size: 1.5rem;
+  transition: height 0.1s linear, width 0.1s linear, transform 0.1s linear,
+    background 0.1s linear, color 0.1s linear;
   transform: translate(-15%, -15%);
+  text-align: center;
+  padding: 2.5em;
 }
 
 .small-pointer {
   height: 20px;
   width: 20px;
-  opacity: 0.6;
+  opacity: 1;
 }
 
 /* body  */
@@ -86,7 +88,91 @@ body {
   top: 0;
   left: 0;
   clip-path: circle(8% at var(--x) var(--y));
-  background: url("../src/Images/Mars01.jpg");
+  background: url("../src/Images/mars_surface.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: clip-path 0.2s linear;
+}
+
+.image1 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  clip-path: circle(8% at var(--x) var(--y));
+  background: url("../src/Images/Mars02.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: clip-path 0.2s linear;
+}
+
+.image2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  clip-path: circle(8% at var(--x) var(--y));
+  background: url("../src/Images/earth.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: clip-path 0.2s linear;
+}
+
+.image3 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  clip-path: circle(8% at var(--x) var(--y));
+  background: url("../src/Images/earth_1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: clip-path 0.2s linear;
+}
+
+.image4 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  clip-path: circle(8% at var(--x) var(--y));
+  background: url("../src/Images/Moon.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: clip-path 0.2s linear;
+}
+
+.image5 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  clip-path: circle(8% at var(--x) var(--y));
+  background: url("../src/Images/moon-surface.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: clip-path 0.2s linear;
+}
+
+.image6 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  clip-path: circle(8% at var(--x) var(--y));
+  background: url("../src/Images/Mars02.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -99,8 +185,50 @@ body {
 .page4:active .image,
 .page5:active .image,
 .page6:active .image,
-.page7:active .image {
-  clip-path: circle(100% at var(--x) var(--y));
+.page7:active .image,
+.page1:active .image1,
+.page2:active .image1,
+.page3:active .image1,
+.page4:active .image1,
+.page5:active .image1,
+.page6:active .image1,
+.page7:active .image1,
+.page1:active .image2,
+.page2:active .image2,
+.page3:active .image2,
+.page4:active .image2,
+.page5:active .image2,
+.page6:active .image2,
+.page7:active .image2,
+.page1:active .image3,
+.page2:active .image3,
+.page3:active .image3,
+.page4:active .image3,
+.page5:active .image3,
+.page6:active .image3,
+.page7:active .image3,
+.page1:active .image4,
+.page2:active .image4,
+.page3:active .image4,
+.page4:active .image4,
+.page5:active .image4,
+.page6:active .image4,
+.page7:active .image4,
+.page1:active .image5,
+.page2:active .image5,
+.page3:active .image5,
+.page4:active .image5,
+.page5:active .image5,
+.page6:active .image5,
+.page7:active .image5,
+.page1:active .image6,
+.page2:active .image6,
+.page3:active .image6,
+.page4:active .image6,
+.page5:active .image6,
+.page6:active .image6,
+.page7:active .image6 {
+  clip-path: circle(100%);
 }
 
 .page1:active .heading h3,
@@ -121,6 +249,10 @@ body {
   width: 100%;
   height: 100%;
 }
+/* 
+.page1:active .page1-content .Pixxmo-image img {
+  filter: grayscale(1);
+} */
 
 /* page one  */
 
@@ -253,12 +385,13 @@ body {
 .page-position-nav > div:nth-of-type(n):hover div::before {
   content: "";
   position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 2rem;
-  height: 2rem;
-  border: 1px dashed rgba(0, 0, 0, 0.4);
+  top: -30%;
+  left: -30%;
+  width: 0.3rem;
+  height: 0.3rem;
+  border: 2px dashed rgba(255, 255, 255, 0.8);
   border-radius: 50%;
+  padding: 0.5rem;
 }
 
 .page-position-nav > div div {

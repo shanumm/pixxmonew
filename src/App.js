@@ -13,16 +13,15 @@ import Contact from "./Contact";
 import Portfolio from "./Portfolio";
 import Try from "./Try";
 export default function App() {
- 
   return (
     <Router>
       <AnimatePresence>
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/home" component={Home} />
-          <Route path="/service" component={Service} />
-          <Route path="/client" exact component={Client} />
-          <Route path="/career" exact component={Career} />
+          <Route path="/services" component={Service} />
+          <Route path="/clients" exact component={Client} />
+          <Route path="/careers" exact component={Career} />
           <Route path="/portfolio" component={Portfolio} />
           <Route path="/contact" component={Contact} />
           <Route path="/team" component={Team} />

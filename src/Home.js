@@ -17,6 +17,7 @@ export default function Home() {
     var page6 = document.querySelector(".page6");
     var page7 = document.querySelector(".page7");
     var image = document.querySelectorAll(".image .img");
+    // var image1 = document.querySelectorAll(".image1 .img");
     var heading = document.querySelector(".heading div");
     var landing_text = document.querySelectorAll(".text h3");
     var text = document.querySelectorAll(".text");
@@ -78,18 +79,39 @@ export default function Home() {
         pagePositionNavDiv[5].style.border = "";
         pagePositionNavDiv[5].style.borderRadius = "";
       }
-      // if (
-      //   page6.getBoundingClientRect().bottom < window.innerHeight / 2 &&
-      //   page6.getBoundingClientRect().bottom > 0
-      // ) {
-      //   pagePositionNavDiv[6].style.border = "5px solid grey";
-      //   pagePositionNavDiv[6].style.borderRadius = "50%";
-      // } else {
-      //   pagePositionNavDiv[6].style.border = "";
-      //   pagePositionNavDiv[6].style.borderRadius = "";
-      // }
+      if (
+        page6.getBoundingClientRect().bottom < window.innerHeight / 2 &&
+        page6.getBoundingClientRect().bottom > 0
+      ) {
+        pagePositionNavDiv[6].style.border = "5px solid grey";
+        pagePositionNavDiv[6].style.borderRadius = "50%";
+      } else {
+        pagePositionNavDiv[6].style.border = "";
+        pagePositionNavDiv[6].style.borderRadius = "";
+      }
+      if (
+        page7.getBoundingClientRect().bottom < window.innerHeight / 2 &&
+        page7.getBoundingClientRect().bottom > 0
+      ) {
+        pagePositionNavDiv[7].style.border = "5px solid grey";
+        pagePositionNavDiv[7].style.borderRadius = "50%";
+      } else {
+        pagePositionNavDiv[7].style.border = "";
+        pagePositionNavDiv[7].style.borderRadius = "";
+      }
     });
 
+    page1.addEventListener("mousedown", () => {
+      start = new Date();
+    });
+    var timer;
+    page1.addEventListener("mouseup", () => {
+      end = new Date();
+      timer = end - start;
+      if (timer > 300) {
+        History.push("/service");
+      }
+    });
     page2.addEventListener("mousedown", () => {
       start = new Date();
     });
@@ -98,7 +120,7 @@ export default function Home() {
       end = new Date();
       timer = end - start;
       if (timer > 300) {
-        History.push("/service");
+        History.push("/services");
       }
     });
     page3.addEventListener("mousedown", () => {
@@ -109,7 +131,7 @@ export default function Home() {
       end = new Date();
       timer = end - start;
       if (timer > 300) {
-        History.push("/client");
+        History.push("/portfolio");
       }
     });
     page4.addEventListener("mousedown", () => {
@@ -120,7 +142,7 @@ export default function Home() {
       end = new Date();
       timer = end - start;
       if (timer > 300) {
-        History.push("/portfolio");
+        History.push("/team");
       }
     });
     page5.addEventListener("mousedown", () => {
@@ -131,29 +153,27 @@ export default function Home() {
       end = new Date();
       timer = end - start;
       if (timer > 300) {
-        History.push("/team");
+        History.push("/clients");
       }
     });
     page6.addEventListener("mousedown", () => {
       start = new Date();
     });
-
     page6.addEventListener("mouseup", () => {
       end = new Date();
       timer = end - start;
       if (timer > 300) {
-        History.push("/contact");
+        History.push("/careers");
       }
     });
     page7.addEventListener("mousedown", () => {
       start = new Date();
     });
-
     page7.addEventListener("mouseup", () => {
       end = new Date();
       timer = end - start;
       if (timer > 300) {
-        History.push("/career");
+        History.push("/contact");
       }
     });
 
@@ -228,6 +248,7 @@ export default function Home() {
     });
 
     const navlist = [
+      "about",
       "clients",
       "service",
       "portfolio",
@@ -289,7 +310,7 @@ export default function Home() {
             </div>
           </div>
           <div className="page2">
-            <div className="image">
+            <div className="image1">
               <div className="img"></div>
             </div>
             {/* <Blob name="2" /> */}
@@ -299,7 +320,7 @@ export default function Home() {
             <Nav />
           </div>
           <div className="page3">
-            <div className="image">
+            <div className="image2">
               <div className="img"></div>
             </div>
             {/* <Blob name="3" /> */}
@@ -310,7 +331,7 @@ export default function Home() {
             <Nav />
           </div>
           <div className="page4">
-            <div className="image">
+            <div className="image3">
               <div className="img"></div>
             </div>
             {/* <Blob name="4" /> */}
@@ -321,7 +342,7 @@ export default function Home() {
             <Nav />
           </div>
           <div className="page5">
-            <div className="image">
+            <div className="image4">
               <div className="img"></div>
             </div>
             {/* <Blob name="5" /> */}
@@ -332,7 +353,7 @@ export default function Home() {
             <Nav />
           </div>
           <div className="page4 page6">
-            <div className="image">
+            <div className="image5">
               <div className="img"></div>
             </div>
             {/* <Blob name="6" /> */}
@@ -343,7 +364,7 @@ export default function Home() {
             <Nav />
           </div>
           <div className="page4 page7">
-            <div className="image">
+            <div className="image6">
               <div className="img"></div>
             </div>
             {/* <Blob name="7" /> */}

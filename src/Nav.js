@@ -53,6 +53,13 @@ export default function Nav() {
             </div>
           </Link>
         </div>
+        <div>
+          <Link to="/career">
+            <div className="positional">
+              <p>career</p>
+            </div>
+          </Link>
+        </div>
       </div>
     </div>
   );
