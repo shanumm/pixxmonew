@@ -305,6 +305,7 @@ export default function Home() {
                     <span>we call it pixxmo</span>
                   </h3>
                 </div>
+                <p>About Us</p>
               </div>
               <Nav />
             </div>
@@ -316,6 +317,7 @@ export default function Home() {
             {/* <Blob name="2" /> */}
             <div className="text">
               <h3>Be great in act, as you have been in thought</h3>
+              <p>Services</p>
             </div>
             <Nav />
           </div>
@@ -327,6 +329,7 @@ export default function Home() {
             <div className="text">
               {" "}
               <h3>You must take your chance</h3>
+              <p>Portfolio</p>
             </div>
             <Nav />
           </div>
@@ -338,6 +341,7 @@ export default function Home() {
             <div className="text">
               {" "}
               <h3>What is past is prologue</h3>
+              <p>Our Team</p>
             </div>
             <Nav />
           </div>
@@ -349,6 +353,7 @@ export default function Home() {
             <div className="text">
               {" "}
               <h3>How many goodly creatures are there here!</h3>
+              <p>Our Clients</p>
             </div>
             <Nav />
           </div>
@@ -360,6 +365,7 @@ export default function Home() {
             <div className="text">
               {" "}
               <h3>Make haste, the better foot before</h3>
+              <p>Careers</p>
             </div>
             <Nav />
           </div>
@@ -371,6 +377,7 @@ export default function Home() {
             <div className="text">
               {" "}
               <h3>All the world’s a stage</h3>
+              <p>Contact Us</p>
             </div>
             <Nav />
           </div>

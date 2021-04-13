@@ -189,10 +189,6 @@ export default function Service() {
             </p>
           </div>
         </div>
-        <div className="text-fourth">
-          <p>Our Team</p>
-          <button>Team</button>
-        </div>
       </div>
       <FallAnimation />
       <Footer />
