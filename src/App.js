@@ -1,5 +1,11 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Link, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Link,
+  Route,
+  Redirect,
+} from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 
 import "./App.css";
@@ -12,13 +18,14 @@ import Client from "./Client";
 import Contact from "./Contact";
 import Portfolio from "./Portfolio";
 import Try from "./Try";
+import About from "./about";
 export default function App() {
   return (
     <Router>
       <AnimatePresence>
         <Switch>
           <Route path="/" exact component={Home} />
-          <Route path="/home" component={Home} />
+          <Route path="/about" component={About} />
           <Route path="/services" component={Service} />
           <Route path="/clients" exact component={Client} />
           <Route path="/careers" exact component={Career} />
@@ -26,6 +33,7 @@ export default function App() {
           <Route path="/contact" component={Contact} />
           <Route path="/team" component={Team} />
           {/* <Try /> */}
+          <Redirect to="/"></Redirect>
         </Switch>
       </AnimatePresence>
     </Router>

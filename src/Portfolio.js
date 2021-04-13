@@ -30,36 +30,48 @@ export default function Portfolio() {
       console.log(page1);
       if (page1.getBoundingClientRect().bottom == windowHeight) {
         portfolioContainer.style.background = "white";
+        document.querySelector(".cross").style.background = "black";
+        document.querySelector(".cross1").style.background = "black";
       }
       if (
         page1.getBoundingClientRect().bottom < windowHeight &&
         page1.getBoundingClientRect().bottom > 0
       ) {
         portfolioContainer.style.background = "black";
+        document.querySelector(".cross").style.background = "white";
+        document.querySelector(".cross1").style.background = "white";
       }
       if (
         page2.getBoundingClientRect().bottom < windowHeight &&
         page2.getBoundingClientRect().bottom > 0
       ) {
         portfolioContainer.style.background = "white";
+        document.querySelector(".cross").style.background = "black";
+        document.querySelector(".cross1").style.background = "black";
       }
       if (
         page3.getBoundingClientRect().bottom < windowHeight &&
         page3.getBoundingClientRect().bottom > 0
       ) {
         portfolioContainer.style.background = "black";
+        document.querySelector(".cross").style.background = "white";
+        document.querySelector(".cross1").style.background = "white";
       }
       if (
         page4.getBoundingClientRect().bottom < windowHeight &&
         page4.getBoundingClientRect().bottom > 0
       ) {
         portfolioContainer.style.background = "white";
+        document.querySelector(".cross").style.background = "black";
+        document.querySelector(".cross1").style.background = "black";
       }
       if (
         page5.getBoundingClientRect().bottom < windowHeight &&
         page5.getBoundingClientRect().bottom > 0
       ) {
         portfolioContainer.style.background = "black";
+        document.querySelector(".cross").style.background = "white";
+        document.querySelector(".cross1").style.background = "white";
       }
     });
   });

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
 import Pixxmo from "./TBG.png";
+import PixxmoW from "./TBGW.png";
 import { Link, Redirect, useHistory } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import Nav from "./Nav";
@@ -29,6 +30,10 @@ export default function Home() {
     var pointer = document.querySelector(".custom-pointer");
     var start, end;
     container.addEventListener("scroll", () => {
+      if (page1.getBoundingClientRect().bottom == window.innerHeight) {
+        pagePositionNavDiv[0].style.border = "5px solid grey";
+        pagePositionNavDiv[0].style.borderRadius = "50%";
+      }
       if (
         page1.getBoundingClientRect().bottom < window.innerHeight / 2 &&
         page1.getBoundingClientRect().bottom > 0
@@ -293,8 +298,11 @@ export default function Home() {
             <div className="page1-content">
               {/* <Blob name="1" /> */}
               <header className="logo">
-                <div className="Pixxmo-image">
+                <div className="Pixxmo-image" id="black">
                   <img src={Pixxmo} />
+                </div>
+                <div className="Pixxmo-image" id="white">
+                  <img src={PixxmoW} />
                 </div>
               </header>
               <div className="heading">
@@ -305,7 +313,6 @@ export default function Home() {
                     <span>we call it pixxmo</span>
                   </h3>
                 </div>
-                <p>About Us</p>
               </div>
               <Nav />
             </div>
@@ -317,7 +324,6 @@ export default function Home() {
             {/* <Blob name="2" /> */}
             <div className="text">
               <h3>Be great in act, as you have been in thought</h3>
-              <p>Services</p>
             </div>
             <Nav />
           </div>
@@ -329,7 +335,6 @@ export default function Home() {
             <div className="text">
               {" "}
               <h3>You must take your chance</h3>
-              <p>Portfolio</p>
             </div>
             <Nav />
           </div>
@@ -341,7 +346,6 @@ export default function Home() {
             <div className="text">
               {" "}
               <h3>What is past is prologue</h3>
-              <p>Our Team</p>
             </div>
             <Nav />
           </div>
@@ -353,7 +357,6 @@ export default function Home() {
             <div className="text">
               {" "}
               <h3>How many goodly creatures are there here!</h3>
-              <p>Our Clients</p>
             </div>
             <Nav />
           </div>
@@ -365,7 +368,6 @@ export default function Home() {
             <div className="text">
               {" "}
               <h3>Make haste, the better foot before</h3>
-              <p>Careers</p>
             </div>
             <Nav />
           </div>
@@ -377,7 +379,6 @@ export default function Home() {
             <div className="text">
               {" "}
               <h3>All the world’s a stage</h3>
-              <p>Contact Us</p>
             </div>
             <Nav />
           </div>

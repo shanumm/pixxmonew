@@ -10,7 +10,7 @@ import Scrollbar from "smooth-scrollbar";
 import { AnimatePresence, motion } from "framer-motion";
 
 import "./App.css";
-export default function Service() {
+export default function About() {
   useEffect(() => {
     // ScrollReveal library
     ScrollReveal({ reset: true }).reveal(".text-third", { delay: 300 });
