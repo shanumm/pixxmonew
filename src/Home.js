@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./App.css";
 import Pixxmo from "./TBG.png";
 import PixxmoW from "./TBGW.png";
+// import Audio from "./soft.mp3";
 import { Link, Redirect, useHistory } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import Nav from "./Nav";
@@ -131,7 +132,6 @@ export default function Home() {
     page3.addEventListener("mousedown", () => {
       start = new Date();
     });
-
     page3.addEventListener("mouseup", () => {
       end = new Date();
       timer = end - start;
@@ -142,7 +142,6 @@ export default function Home() {
     page4.addEventListener("mousedown", () => {
       start = new Date();
     });
-
     page4.addEventListener("mouseup", () => {
       end = new Date();
       timer = end - start;
@@ -153,7 +152,6 @@ export default function Home() {
     page5.addEventListener("mousedown", () => {
       start = new Date();
     });
-
     page5.addEventListener("mouseup", () => {
       end = new Date();
       timer = end - start;

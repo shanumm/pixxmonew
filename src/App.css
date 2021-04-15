@@ -228,7 +228,19 @@ body {
 .page5:active .image6,
 .page6:active .image6,
 .page7:active .image6 {
-  clip-path: circle(100%);
+  animation: clipimg 1s linear forwards;
+}
+
+@keyframes clipimg {
+  0% {
+    clip-path: circle(0%);
+  }
+  50% {
+    clip-path: circle(50%);
+  }
+  100% {
+    clip-path: circle(100%);
+  }
 }
 
 .page1:active .heading h3,
@@ -559,6 +571,7 @@ body {
   min-height: 280vh;
   width: 100%;
   background: rgb(14, 13, 13);
+  text-align: justify;
 }
 .text-one {
   font-size: 3rem;
@@ -1111,7 +1124,14 @@ body {
 .portfolio-page2,
 .portfolio-page3,
 .portfolio-page4,
-.portfolio-page5 {
+.portfolio-page5,
+.portfolio-page6,
+.portfolio-page7,
+.portfolio-page8,
+.portfolio-page9,
+.portfolio-page10,
+.portfolio-page11,
+.portfolio-page12 {
   height: 100vh;
   scroll-snap-align: start;
 }
@@ -1165,7 +1185,7 @@ body {
 .p-p1-content-right-img {
   width: 25rem;
   height: 25rem;
-  background: url("https://cdn.pixabay.com/photo/2021/02/22/08/41/crocus-6039312_960_720.jpg");
+  background: url("https://pixabay.com/illustrations/mountains-moon-earth-space-1732123/");
   background-position: center;
   background-size: cover;
   transform: perspective(600px) rotateY(-20deg) rotateX(10deg);
@@ -1175,6 +1195,11 @@ body {
   animation: image-translate 2s ease-in-out alternate infinite;
   box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
   transform-style: preserve-3d;
+}
+
+.p-p1-content-right-img img {
+  width: 25rem;
+  height: 25rem;
 }
 
 .extra {

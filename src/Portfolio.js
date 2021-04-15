@@ -2,7 +2,18 @@ import React, { useEffect } from "react";
 import Cross from "./Cross";
 import { Link } from "react-router-dom";
 import inView from "in-view";
-
+import W1 from "./portfolio/w1.jpg";
+import W2 from "./portfolio/w2.jpg";
+import W3 from "./portfolio/w3.jpg";
+import W4 from "./portfolio/w4.jpg";
+import W5 from "./portfolio/w5.jpg";
+import W6 from "./portfolio/w6.jpg";
+import W7 from "./portfolio/w7.jpg";
+import W8 from "./portfolio/w8.jpg";
+import W9 from "./portfolio/w9.jpg";
+import W10 from "./portfolio/w10.jpg";
+import Indo from "./portfolio/w11.png";
+import Pure from "./portfolio/w12.png";
 import { AnimatePresence, motion } from "framer-motion";
 
 import "./App.css";
@@ -83,7 +94,7 @@ export default function Portfolio() {
       animate={{ opacity: 1 }}
       initial={{ opacity: 0 }}
     >
-      <Link to="/home">
+      <Link to="/">
         <Cross />
       </Link>
       <div className="portfolio-container">
@@ -101,7 +112,9 @@ export default function Portfolio() {
               <h4>read more</h4>
             </div>
             <div className="p-p1-content-right">
-              <div className="p-p1-content-right-img"></div>
+              <div className="p-p1-content-right-img">
+                <img src={Indo} />
+              </div>
             </div>
           </div>
         </div>
@@ -119,7 +132,9 @@ export default function Portfolio() {
               <h4 style={{ color: "white" }}>read more</h4>
             </div>
             <div className="p-p1-content-right">
-              <div className="p-p1-content-right-img"></div>
+              <div className="p-p1-content-right-img">
+                <img src={Indo} />
+              </div>
             </div>
           </div>
         </div>
@@ -137,7 +152,9 @@ export default function Portfolio() {
               <h4>read more</h4>
             </div>
             <div className="p-p1-content-right">
-              <div className="p-p1-content-right-img"></div>
+              <div className="p-p1-content-right-img">
+                <img src={Indo} />
+              </div>
             </div>
           </div>
         </div>
@@ -155,7 +172,9 @@ export default function Portfolio() {
               <h4 style={{ color: "white" }}>read more</h4>
             </div>
             <div className="p-p1-content-right">
-              <div className="p-p1-content-right-img"></div>
+              <div className="p-p1-content-right-img">
+                <img src={Indo} />
+              </div>
             </div>
           </div>
         </div>
@@ -173,7 +192,149 @@ export default function Portfolio() {
               <h4>read more</h4>
             </div>
             <div className="p-p1-content-right">
-              <div className="p-p1-content-right-img"></div>
+              <div className="p-p1-content-right-img">
+                <img src={Indo} />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="portfolio-page6">
+          <div className="p-p1-header">
+            <h4>pixXmo</h4>
+          </div>
+          <div className="p-p1-content">
+            <div className="p-p1-content-left">
+              <h1 style={{ color: "white" }}>Lorem</h1>
+              <h3 style={{ color: "white" }}>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                exercitationem in doloribus quibusdam, atque accusamus!
+              </h3>
+              <h4 style={{ color: "white" }}>read more</h4>
+            </div>
+            <div className="p-p1-content-right">
+              <div className="p-p1-content-right-img">
+                <img src={Indo} />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="portfolio-page7">
+          <div className="p-p1-header">
+            <h4>pixXmo</h4>
+          </div>
+          <div className="p-p1-content">
+            <div className="p-p1-content-left">
+              <h1>Lorem</h1>
+              <h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                exercitationem in doloribus quibusdam, atque accusamus!
+              </h3>
+              <h4>read more</h4>
+            </div>
+            <div className="p-p1-content-right">
+              <div className="p-p1-content-right-img">
+                <img src={Indo} />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="portfolio-page8">
+          <div className="p-p1-header">
+            <h4>pixXmo</h4>
+          </div>
+          <div className="p-p1-content">
+            <div className="p-p1-content-left">
+              <h1 style={{ color: "white" }}>Lorem</h1>
+              <h3 style={{ color: "white" }}>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                exercitationem in doloribus quibusdam, atque accusamus!
+              </h3>
+              <h4 style={{ color: "white" }}>read more</h4>
+            </div>
+            <div className="p-p1-content-right">
+              <div className="p-p1-content-right-img">
+                <img src={Indo} />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="portfolio-page9">
+          <div className="p-p1-header">
+            <h4>pixXmo</h4>
+          </div>
+          <div className="p-p1-content">
+            <div className="p-p1-content-left">
+              <h1>Lorem</h1>
+              <h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                exercitationem in doloribus quibusdam, atque accusamus!
+              </h3>
+              <h4>read more</h4>
+            </div>
+            <div className="p-p1-content-right">
+              <div className="p-p1-content-right-img">
+                <img src={Indo} />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="portfolio-page10">
+          <div className="p-p1-header">
+            <h4>pixXmo</h4>
+          </div>
+          <div className="p-p1-content">
+            <div className="p-p1-content-left">
+              <h1 style={{ color: "white" }}>Lorem</h1>
+              <h3 style={{ color: "white" }}>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                exercitationem in doloribus quibusdam, atque accusamus!
+              </h3>
+              <h4 style={{ color: "white" }}>read more</h4>
+            </div>
+            <div className="p-p1-content-right">
+              <div className="p-p1-content-right-img">
+                <img src={Indo} />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="portfolio-page11">
+          <div className="p-p1-header">
+            <h4>pixXmo</h4>
+          </div>
+          <div className="p-p1-content">
+            <div className="p-p1-content-left">
+              <h1>Lorem</h1>
+              <h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                exercitationem in doloribus quibusdam, atque accusamus!
+              </h3>
+              <h4>read more</h4>
+            </div>
+            <div className="p-p1-content-right">
+              <div className="p-p1-content-right-img">
+                <img src={Indo} />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="portfolio-page12">
+          <div className="p-p1-header">
+            <h4>pixXmo</h4>
+          </div>
+          <div className="p-p1-content">
+            <div className="p-p1-content-left">
+              <h1 style={{ color: "white" }}>Lorem</h1>
+              <h3 style={{ color: "white" }}>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                exercitationem in doloribus quibusdam, atque accusamus!
+              </h3>
+              <h4 style={{ color: "white" }}>read more</h4>
+            </div>
+            <div className="p-p1-content-right">
+              <div className="p-p1-content-right-img">
+                <img src={Indo} />
+              </div>
             </div>
           </div>
         </div>

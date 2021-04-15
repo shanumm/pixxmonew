@@ -10,6 +10,7 @@ import Scrollbar from "smooth-scrollbar";
 import { AnimatePresence, motion } from "framer-motion";
 
 import "./App.css";
+import NeonAnimation from "./NeonAnimation";
 export default function Service() {
   useEffect(() => {
     // ScrollReveal library
@@ -191,6 +192,7 @@ export default function Service() {
         </div>
       </div>
       <FallAnimation />
+      <NeonAnimation />
       <Footer />
     </motion.div>
   );
