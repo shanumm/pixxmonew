@@ -570,7 +570,7 @@ body {
 .service-content {
   min-height: 280vh;
   width: 100%;
-  background: rgb(14, 13, 13);
+  background: black;
   text-align: justify;
 }
 .text-one {
