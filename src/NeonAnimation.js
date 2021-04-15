@@ -8,7 +8,7 @@ export default function NeonAnimation() {
       h = (c.height = window.innerHeight),
       ctx = c.getContext("2d"),
       opts = {
-        len: 10,
+        len: 20,
         count: 50,
         baseTime: 10,
         addedTime: 10,
@@ -46,7 +46,7 @@ export default function NeonAnimation() {
 
       ctx.globalCompositeOperation = "source-over";
       ctx.shadowBlur = 0;
-      ctx.fillStyle = "rgba(14,13,13,alp)".replace("alp", opts.repaintAlpha);
+      ctx.fillStyle = "rgba(0,0,0,alp)".replace("alp", opts.repaintAlpha);
       ctx.fillRect(0, 0, w, h);
       ctx.globalCompositeOperation = "lighter";
 
