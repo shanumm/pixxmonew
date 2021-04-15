@@ -40,9 +40,9 @@ export default function Portfolio() {
 
       console.log(page1);
       if (page1.getBoundingClientRect().bottom == windowHeight) {
-        portfolioContainer.style.background = "white";
-        document.querySelector(".cross").style.background = "black";
-        document.querySelector(".cross1").style.background = "black";
+        portfolioContainer.style.background = "black";
+        document.querySelector(".cross").style.background = "white";
+        document.querySelector(".cross1").style.background = "white";
       }
       if (
         page1.getBoundingClientRect().bottom < windowHeight &&
@@ -56,9 +56,9 @@ export default function Portfolio() {
         page2.getBoundingClientRect().bottom < windowHeight &&
         page2.getBoundingClientRect().bottom > 0
       ) {
-        portfolioContainer.style.background = "white";
-        document.querySelector(".cross").style.background = "black";
-        document.querySelector(".cross1").style.background = "black";
+        portfolioContainer.style.background = "black";
+        document.querySelector(".cross").style.background = "white";
+        document.querySelector(".cross1").style.background = "white";
       }
       if (
         page3.getBoundingClientRect().bottom < windowHeight &&
@@ -72,9 +72,9 @@ export default function Portfolio() {
         page4.getBoundingClientRect().bottom < windowHeight &&
         page4.getBoundingClientRect().bottom > 0
       ) {
-        portfolioContainer.style.background = "white";
-        document.querySelector(".cross").style.background = "black";
-        document.querySelector(".cross1").style.background = "black";
+        portfolioContainer.style.background = "black";
+        document.querySelector(".cross").style.background = "white";
+        document.querySelector(".cross1").style.background = "white";
       }
       if (
         page5.getBoundingClientRect().bottom < windowHeight &&
@@ -124,12 +124,12 @@ export default function Portfolio() {
           </div>
           <div className="p-p1-content">
             <div className="p-p1-content-left">
-              <h1 style={{ color: "white" }}>Lorem</h1>
-              <h3 style={{ color: "white" }}>
+              <h1>Lorem</h1>
+              <h3>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
                 exercitationem in doloribus quibusdam, atque accusamus!
               </h3>
-              <h4 style={{ color: "white" }}>read more</h4>
+              <h4>read more</h4>
             </div>
             <div className="p-p1-content-right">
               <div className="p-p1-content-right-img">
@@ -164,12 +164,12 @@ export default function Portfolio() {
           </div>
           <div className="p-p1-content">
             <div className="p-p1-content-left">
-              <h1 style={{ color: "white" }}>Lorem</h1>
-              <h3 style={{ color: "white" }}>
+              <h1>Lorem</h1>
+              <h3>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
                 exercitationem in doloribus quibusdam, atque accusamus!
               </h3>
-              <h4 style={{ color: "white" }}>read more</h4>
+              <h4>read more</h4>
             </div>
             <div className="p-p1-content-right">
               <div className="p-p1-content-right-img">
@@ -204,12 +204,12 @@ export default function Portfolio() {
           </div>
           <div className="p-p1-content">
             <div className="p-p1-content-left">
-              <h1 style={{ color: "white" }}>Lorem</h1>
-              <h3 style={{ color: "white" }}>
+              <h1>Lorem</h1>
+              <h3>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
                 exercitationem in doloribus quibusdam, atque accusamus!
               </h3>
-              <h4 style={{ color: "white" }}>read more</h4>
+              <h4>read more</h4>
             </div>
             <div className="p-p1-content-right">
               <div className="p-p1-content-right-img">
@@ -244,12 +244,12 @@ export default function Portfolio() {
           </div>
           <div className="p-p1-content">
             <div className="p-p1-content-left">
-              <h1 style={{ color: "white" }}>Lorem</h1>
-              <h3 style={{ color: "white" }}>
+              <h1>Lorem</h1>
+              <h3>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
                 exercitationem in doloribus quibusdam, atque accusamus!
               </h3>
-              <h4 style={{ color: "white" }}>read more</h4>
+              <h4>read more</h4>
             </div>
             <div className="p-p1-content-right">
               <div className="p-p1-content-right-img">
@@ -284,12 +284,12 @@ export default function Portfolio() {
           </div>
           <div className="p-p1-content">
             <div className="p-p1-content-left">
-              <h1 style={{ color: "white" }}>Lorem</h1>
-              <h3 style={{ color: "white" }}>
+              <h1>Lorem</h1>
+              <h3>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
                 exercitationem in doloribus quibusdam, atque accusamus!
               </h3>
-              <h4 style={{ color: "white" }}>read more</h4>
+              <h4>read more</h4>
             </div>
             <div className="p-p1-content-right">
               <div className="p-p1-content-right-img">
@@ -324,12 +324,12 @@ export default function Portfolio() {
           </div>
           <div className="p-p1-content">
             <div className="p-p1-content-left">
-              <h1 style={{ color: "white" }}>Lorem</h1>
-              <h3 style={{ color: "white" }}>
+              <h1>Lorem</h1>
+              <h3>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
                 exercitationem in doloribus quibusdam, atque accusamus!
               </h3>
-              <h4 style={{ color: "white" }}>read more</h4>
+              <h4>read more</h4>
             </div>
             <div className="p-p1-content-right">
               <div className="p-p1-content-right-img">

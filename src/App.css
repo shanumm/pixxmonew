@@ -685,11 +685,12 @@ body {
   width: 100%;
 }
 .contact-text1 {
-  height: 100vh;
+  height: auto;
   width: 100%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  padding-top: 2em;
 }
 .contact-text1 h1 {
   margin-right: 2rem;
@@ -1117,7 +1118,7 @@ body {
   height: 100vh;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
-  transition: background 0.8s ease-in-out;
+  /* transition: background 0.8s ease-in-out; */
 }
 
 .portfolio-page1,

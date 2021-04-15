@@ -28,7 +28,7 @@ export default function Contact() {
       </Link>
       <div className="contact">
         <div className="contact-text1">
-          <h1>Get in touch; Calls to action need to be direct!</h1>
+          <h1>Calls to action need to be direct!</h1>
         </div>
         <div className="contact-text2">
           <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. .</h2>
